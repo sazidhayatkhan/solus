@@ -1,14 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #00373e;
+  --color-secondary: #f9e6d0;
+}
+
 body {
-  max-width: 1536px;
+  max-width: 1280px;
   margin: auto;
   background-color: #f7f6f4;
 }
 
 @layer base {
     ._container {
-        @apply px-[3%] md:px-[8%];
+        @apply max-w-[800px] mx-auto px-[3%] md:px-[8%];
     }
     .__greatVibes {
         font-family: "Great Vibes", sans-serif;
