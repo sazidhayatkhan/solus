@@ -22,7 +22,7 @@ const CardTypeImg = ({ data }: Props) => {
       </div>
       {
         data?.photoUrl &&
-            <div className="relative w-full h-[200px] md:w-[200px] md:h-[200px]">
+            <div className="relative w-full h-[200px] md:w-[200px] md:h-[250px]">
                 <Image
                 src={data?.photoUrl || "/images/ill_one.png"}
                 alt="Therapist helping client"

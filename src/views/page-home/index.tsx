@@ -11,6 +11,8 @@ const HomePageUI = (props: Props) => {
     <Hero/>
     <SectionTwo/>
     <SectionThree/>
+    <Hero/>
+    <SectionTwo/>
     </div>
   )
 }
