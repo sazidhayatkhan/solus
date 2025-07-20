@@ -9,7 +9,7 @@ const SectionTwo = (props: Props) => {
       <div className="space-y-6 text-center md:text-start mx-auto md:mx-0">
         <p className="text-sm text-primary font-semibold">HOW IT WORKS</p>
 
-        <h2 className="text-primary leading-9 md:leading-[3.25rem] text-3xl md:text-5xl font-bold w-[350px]">
+        <h2 className="text-primary leading-9 md:leading-[3.50rem] text-3xl md:text-5xl font-bold w-[350px]">
           We Help You Prioritize Your Mental Health
         </h2>
 
