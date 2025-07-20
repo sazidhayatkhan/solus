@@ -1,3 +1,5 @@
+'use client'
+import Button from '@/components/ui/Button'
 import React from 'react'
 
 function page() {
@@ -6,6 +8,9 @@ function page() {
       <h1 className="text-3xl font-bold underline bg-red-400">
       Hello world!
     </h1>
+    <Button onClick={() => alert('Primary clicked!')}>
+        Primary
+      </Button>
     </div>
   )
 }
