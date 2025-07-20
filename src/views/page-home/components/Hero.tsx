@@ -1,3 +1,4 @@
+
 import Button from '@/components/ui/Button'
 import React from 'react'
 
@@ -6,7 +7,7 @@ type Props = {}
 const Hero = (props: Props) => {
   return (
     <div
-      className="_container relative w-full h-[300px] md:h-[470px] bg-cover bg-center flex items-center justify-center mx-auto rounded-0 md:rounded-[40px]"
+      className="_container relative w-full h-[300px] md:h-[490px] bg-cover bg-center flex items-center justify-center mx-auto rounded-0 md:rounded-[40px]"
       style={{ backgroundImage: "url('/images/hero_bg.jpg')" }}
     >
       <div className="text-center px-4">
