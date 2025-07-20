@@ -7,13 +7,13 @@ const SectionTwo = (props: Props) => {
   return (
     <div className="_container flex flex-col md:flex-row justify-between items-start md:items-center">
       <div className="space-y-6 text-center md:text-start mx-auto md:mx-0">
-        <p className="text-sm text-primary font-semibold">HOW IT WORKS</p>
+        <p className="heading-tag">HOW IT WORKS</p>
 
-        <h2 className="text-primary leading-9 md:leading-[3.50rem] text-3xl md:text-5xl font-bold w-[350px]">
+        <h2 className="heading-xl w-[350px]">
           We Help You Prioritize Your Mental Health
         </h2>
 
-        <p className="text-regular text-primary w-[350px]">
+        <p className="paragraph-base w-[350px]">
           Browse therapists, book a session, and start your healing journey with
           trusted professionals.
         </p>

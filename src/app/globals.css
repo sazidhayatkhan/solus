@@ -7,14 +7,28 @@
   --font-brico: "Bricolage Grotesque", sans-serif; 
 }
 
-body {
-  max-width: 1280px;
-  margin: auto;
-  background-color: #f7f6f4;
-}
-
 @layer base {
     ._container {
         @apply max-w-[1100px] mx-auto px-[3%] md:px-[3%];
     }
+}
+
+@layer components {
+  .heading-tag {
+    @apply text-xs text-primary font-semibold;
+  }
+
+  .heading-xl {
+    @apply text-primary leading-9 md:leading-[3.50rem] text-3xl md:text-5xl font-bold;
+  }
+
+  .paragraph-base {
+    @apply text-base text-primary leading-relaxed;
+  }
+}
+
+body {
+  max-width: 1280px;
+  margin: auto;
+  background-color: #f7f6f4;
 }

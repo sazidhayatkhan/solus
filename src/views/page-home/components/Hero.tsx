@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
         <h1 className="font-brico max-w-[80%] md:max-w-[600px] mx-auto text-3xl md:text-6xl leading-tight font-bold mb-4 text-primary">
           Support for Your Mental Well-being
         </h1>
-        <p className="max-w-[74%] md:max-w-[360px] mx-auto text-regular mb-6 text-primary">
+        <p className="max-w-[74%] md:max-w-[360px] mx-auto paragraph-base mb-6">
           Connect with licensed therapists, counselors, and wellness coaches to support your journey.
         </p>
         <Button>Get Started</Button>
