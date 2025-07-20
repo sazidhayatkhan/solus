@@ -1,11 +1,12 @@
 'use client'
 import Button from '@/components/ui/Button'
+import HomePageUI from '@/views/page-home'
 import React from 'react'
 
 function page() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline bg-red-400">
+      {/* <h1 className="text-3xl font-bold underline bg-red-400">
       Hello world!
     </h1>
     <Button onClick={() => alert('Primary clicked!')}>
@@ -13,7 +14,8 @@ function page() {
       </Button>
       <Button variant="outline" onClick={() => alert('Outline clicked!')}>
         Outlined
-      </Button>
+      </Button> */}
+      <HomePageUI/>
     </div>
   )
 }
