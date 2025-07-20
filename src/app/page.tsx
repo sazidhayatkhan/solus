@@ -11,6 +11,9 @@ function page() {
     <Button onClick={() => alert('Primary clicked!')}>
         Primary
       </Button>
+      <Button variant="outline" onClick={() => alert('Outline clicked!')}>
+        Outlined
+      </Button>
     </div>
   )
 }
