@@ -6,14 +6,14 @@ type Props = {}
 const Hero = (props: Props) => {
   return (
     <div
-      className="relative w-full md:w-[800px] h-[300px] md:h-[400px] bg-cover bg-center flex items-center justify-center mx-auto rounded-0 md:rounded-[40px]"
+      className="_container relative w-full h-[300px] md:h-[470px] bg-cover bg-center flex items-center justify-center mx-auto rounded-0 md:rounded-[40px]"
       style={{ backgroundImage: "url('/images/hero_bg.jpg')" }}
     >
       <div className="text-center px-4">
-        <h1 className="font-brico max-w-[80%] md:max-w-[500px] mx-auto text-3xl md:text-[45px] leading-tight font-bold mb-4 text-primary">
+        <h1 className="font-brico max-w-[80%] md:max-w-[600px] mx-auto text-3xl md:text-6xl leading-tight font-bold mb-4 text-primary">
           Support for Your Mental Well-being
         </h1>
-        <p className="max-w-[74%] md:max-w-[320px] mx-auto text-sm mb-6 text-primary">
+        <p className="max-w-[74%] md:max-w-[360px] mx-auto text-regular mb-6 text-primary">
           Connect with licensed therapists, counselors, and wellness coaches to support your journey.
         </p>
         <Button>Get Started</Button>

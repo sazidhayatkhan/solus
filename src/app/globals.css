@@ -15,6 +15,6 @@ body {
 
 @layer base {
     ._container {
-        @apply max-w-[800px] mx-auto px-[3%] md:px-[8%];
+        @apply max-w-[1100px] mx-auto px-[3%] md:px-[8%];
     }
 }
