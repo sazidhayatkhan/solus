@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 @import "tailwindcss";
 
 @theme {
   --color-primary: #00373e;
   --color-secondary: #f9e6d0;
+  --font-brico: "Bricolage Grotesque", sans-serif; 
 }
 
 body {
@@ -15,7 +17,4 @@ body {
     ._container {
         @apply max-w-[800px] mx-auto px-[3%] md:px-[8%];
     }
-    .__greatVibes {
-        font-family: "Great Vibes", sans-serif;
-      }
 }

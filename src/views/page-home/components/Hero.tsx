@@ -10,7 +10,7 @@ const Hero = (props: Props) => {
       style={{ backgroundImage: "url('/images/hero_bg.jpg')" }}
     >
       <div className="text-center px-4">
-        <h1 className="max-w-[80%] md:max-w-[500px] mx-auto text-3xl md:text-[45px] leading-tight font-bold mb-4 text-primary">
+        <h1 className="font-brico max-w-[80%] md:max-w-[500px] mx-auto text-3xl md:text-[45px] leading-tight font-bold mb-4 text-primary">
           Support for Your Mental Well-being
         </h1>
         <p className="max-w-[74%] md:max-w-[320px] mx-auto text-sm mb-6 text-primary">
