@@ -14,10 +14,10 @@ const CardTypeImg = ({ data }: Props) => {
   return (
     <div className={`${data?.bgColor ==='secondary'?"bg-secondary":"bg-white"} rounded-3xl p-7 flex justify-between items-center shadow`}>
       <div className="space-y-5">
-        <p className="text-primary leading-8 md:leading-9 text-2xl md:text-3xl font-bold w-[250px]">
+        <p className="text-primary leading-8 md:leading-9 text-2xl md:text-3xl font-bold w-[200px] md:w-[250px]">
           {data?.title}
         </p>
-        <p className="paragraph-base w-[300px]">{data.desc}</p>
+        <p className="paragraph-base w-[200px] md:w-[300px]">{data.desc}</p>
         <Button variant="outline">Learn More</Button>
       </div>
       {
