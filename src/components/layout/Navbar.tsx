@@ -3,6 +3,10 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
+    <>
+    <div className="flex justify-center md:hidden bg-secondary/70 border-b-[1px]">
+      <p className="text-3xl font-bold py-3 text-primary">Solus</p>
+    </div>
     <div className="_container hidden relative md:flex justify-between items-center font-brico text-primary py-6">
       {/* Left Menu */}
       <div className="flex gap-10 items-center">
@@ -23,6 +27,7 @@ const Navbar = () => {
         <Link href="/contact">Contact</Link>
       </div>
     </div>
+    </>
   );
 };
 
