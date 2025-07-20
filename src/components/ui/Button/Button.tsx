@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
 
   const variants = {
     primary: 'bg-primary text-white hover:bg-primary/90',
-    outline: 'border border-primary text-primary hover:bg-blue-50',
+    outline: 'border border-primary text-primary hover:bg-primary hover:text-white',
   };
 
   const disabledStyles = 'opacity-50 cursor-not-allowed';

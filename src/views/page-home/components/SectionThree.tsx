@@ -4,15 +4,34 @@ import React from 'react'
 type Props = {}
 
 const SectionThree = (props: Props) => {
+
+  const data = [
+    {
+        title:"Mindfulness & Meditation",
+        desc:"Guided meditation sessions and stress management techniques.",
+        photoUrl:"/images/ill_one.png",
+        bgColor:"secondary"
+    },
+    {
+        title:"One-on-One Therapy",
+        desc:"Virtual and in-person therapy sessions with licensed professionals.",
+        photoUrl:"",
+        bgColor:""
+    },
+  ]
   return (
     <div className='_container'>
-        <div className='space-y-6 w-[240px] md:w-[300px] mx-auto text-center'>
+        <div className='space-y-6 w-[250px] md:w-[300px] mx-auto text-center'>
             <p className="heading-tag">SERVICES</p>
             <h2 className="heading-xl">Your Path to Well-being</h2>
             <p className="paragraph-base">Discover expert guidance for a healthier mind and balanced life.</p>
         </div>
-        <div className='mt-10'>
-            <CardTypeImg/>
+        <div className='mt-10 grid grid-cols-1 md:grid-cols-2 gap-3 mb-3'>
+            {
+                data?.map((item,index)=>(
+                    <CardTypeImg key={index} data={item}/>
+                ))
+            }
         </div>
     </div>
   )
