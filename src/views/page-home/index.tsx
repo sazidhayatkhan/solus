@@ -5,9 +5,9 @@ type Props = {}
 
 const HomePageUI = (props: Props) => {
   return (
-    <>
-        <Hero/>
-    </>
+    <div className=''>
+    <Hero/>
+    </div>
   )
 }
 

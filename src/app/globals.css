@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
 body {
+  max-width: 1536px;
+  margin: auto;
   background-color: #f7f6f4;
+}
+
+@layer base {
+    ._container {
+        @apply px-[3%] md:px-[8%];
+    }
+    .__greatVibes {
+        font-family: "Great Vibes", sans-serif;
+      }
 }
