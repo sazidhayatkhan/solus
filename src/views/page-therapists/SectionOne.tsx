@@ -5,8 +5,9 @@ type Props = {}
 
 const SectionOne = (props: Props) => {
   return (
+    <div className='mx-4 md:mx-0 mt-4 md:mt-0'>
    <div
-  className="_container relative w-full h-[250px] md:h-[400px] bg-cover bg-top rounded-0 md:rounded-[40px]"
+  className="_container relative w-full h-[230px] md:h-[400px] bg-contain md:bg-cover bg-top rounded-3xl md:rounded-[40px]"
   style={{ backgroundImage: "url('/images/therapists.png')" }}
 >
   <div className="absolute bottom-4 left-0 right-0 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center">
@@ -16,6 +17,8 @@ const SectionOne = (props: Props) => {
     <Button>Book Now</Button>
   </div>
 </div>
+
+    </div>
 
   )
 }
