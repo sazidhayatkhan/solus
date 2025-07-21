@@ -5,7 +5,7 @@ type Props = {};
 
 const Card = (props: Props) => {
   return (
-    <div className="rounded-3xl p-7 h-[30vh] md:h-[300px] flex flex-col justify-between bg-secondary">
+    <div className="rounded-3xl p-7 bg-secondary">
       <div>
         <p className="text-primary leading-6 md:leading-9 text-xl md:text-3xl font-bold">
           Instant Consultation
@@ -14,7 +14,7 @@ const Card = (props: Props) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </div>
-      <div>
+      <div className="mt-5 md:mt-20">
         <Button>Start Now</Button>
       </div>
     </div>
