@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
+import Link from "next/link"
 type Props = {};
 
 const SectionTwo = (props: Props) => {
@@ -19,7 +20,9 @@ const SectionTwo = (props: Props) => {
         </p>
 
         <div className="flex justify-center md:justify-start mb-10 md:mb-0">
-          <Button>Find a Therapist</Button>
+          <Link href="/therapists">
+            <Button>Find a Therapist</Button>
+          </Link>
         </div>
       </div>
 
