@@ -37,9 +37,9 @@ const MobileBottomBar = (props: Props) => {
           <Link href={item?.linkUrl || ""}>
             <li
               key={index}
-              className="flex flex-col items-center justify-center w-18 h-18 text-white"
+              className="flex flex-col items-center justify-center w-15 h-15 text-white"
             >
-              <span className="text-3xl">{item.icon}</span>
+              <span className="text-2xl">{item.icon}</span>
             </li>
           </Link>
         ))}
