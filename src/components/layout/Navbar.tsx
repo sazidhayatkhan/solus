@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Avatar from "./Avatar";
 
 const Navbar = () => {
   return (
@@ -23,8 +24,8 @@ const Navbar = () => {
       {/* Right Menu */}
       <div className="flex gap-10 items-center">
         <Link href="/therapists">Therapists</Link>
-        <Link href="/resources">Resources</Link>
         <Link href="/contact">Contact</Link>
+        <Avatar/>
       </div>
     </div>
     </>
