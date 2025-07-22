@@ -11,7 +11,7 @@ export default function DashboardClient() {
       <h1 className="text-3xl font-bold">Dashboard Test</h1>
       <p>Welcome, {session.user?.name} ({session.user?.email})</p>
       <button
-        onClick={() => signOut({ callbackUrl: "/login" })}
+        onClick={() => signOut({ callbackUrl: "/" })}
         className="mt-4 px-4 py-2 bg-red-500 text-white rounded"
       >
         Sign Out
