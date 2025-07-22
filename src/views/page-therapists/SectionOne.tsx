@@ -5,6 +5,32 @@ import Card from "./components/ui/Card/Card";
 type Props = {};
 
 const SectionOne = (props: Props) => {
+  const data = [
+    {
+      title:"Instant Consultation",
+      desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      bgUrl:"/images/doc3.png",
+      linkUrl:'/'
+    },
+    {
+      title:"Find Doctors Near You",
+      desc:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      bgUrl:"/images/doc1.png",
+      linkUrl:'/'
+    },
+    {
+      title:"24/7 Medicines",
+      desc:"Essentials at your own doorstep",
+      bgUrl:"/images/doc2.png",
+      linkUrl:'/'
+    },
+    {
+      title:"Accurate Lab Tests",
+      desc:"Free pickup from your home on any day",
+      bgUrl:"/images/doc4.png",
+      linkUrl:'/'
+    }
+  ]
   return (
     <div className="px-4 md:px-0 _container">
       <div className="mt-4 md:mt-0">
@@ -23,8 +49,8 @@ const SectionOne = (props: Props) => {
       </div>
       <div className="mt-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[1, 2, 3, 4].map((item, index) => (
-            <Card key={index} />
+          {data?.map((item, index) => (
+            <Card key={index} data={item} />
           ))}
         </div>
       </div>

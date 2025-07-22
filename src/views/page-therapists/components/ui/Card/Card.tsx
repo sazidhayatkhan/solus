@@ -1,21 +1,36 @@
-import Button from "@/components/ui/Button";
 import React from "react";
+import Link from 'next/link';
+import Button from "@/components/ui/Button";
 
-type Props = {};
+type Props = {
+  data: {
+    title?: string;
+    desc?: string;
+    bgUrl?: string;
+    linkUrl?: string;
+  };
+};
 
-const Card = (props: Props) => {
+const Card = ({ data }: Props) => {
   return (
-    <div className="rounded-3xl p-7 bg-secondary">
+    <div
+      className="bg-cover bg-center rounded-3xl p-7 bg-secondary"
+      style={{
+        backgroundImage: data?.bgUrl ? `url(${data.bgUrl})` : 'none',
+      }}
+    >
       <div>
         <p className="text-primary leading-6 md:leading-9 text-xl md:text-3xl font-bold">
-          Instant Consultation
+          {data?.title}
         </p>
         <p className="paragraph-base mt-2 md:mt-0">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          {data?.desc}
         </p>
       </div>
       <div className="mt-5 md:mt-20">
-        <Button>Start Now</Button>
+        <Link href={data?.linkUrl || "/"}>
+          <Button>Start Now</Button>
+        </Link>
       </div>
     </div>
   );
