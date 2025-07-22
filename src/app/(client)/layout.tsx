@@ -4,6 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import SessionProvider from "@/lib/SessionProvider";
+import MobileBottomBar from "@/components/layout/MobileBottomBar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,6 +25,7 @@ export default async function RootLayout({
         <SessionProvider session={session}>
           <Navbar/>
                   {children}
+                  <MobileBottomBar/>
                 </SessionProvider>
         
       </body>
