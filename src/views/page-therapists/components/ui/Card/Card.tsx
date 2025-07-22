@@ -14,7 +14,7 @@ type Props = {
 const Card = ({ data }: Props) => {
   return (
     <div
-      className="bg-cover bg-center rounded-3xl p-7 bg-secondary"
+      className="bg-cover bg-center rounded-3xl p-7 bg-secondary h-[20vh] md:h-[300px]"
       style={{
         backgroundImage: data?.bgUrl ? `url(${data.bgUrl})` : 'none',
       }}
