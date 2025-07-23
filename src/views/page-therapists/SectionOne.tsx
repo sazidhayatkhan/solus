@@ -34,21 +34,16 @@ const SectionOne = (props: Props) => {
   ];
   return (
     <div className="">
-      <div className="">
-        <HeroSection
-          backgroundImageUrl="/images/therapists.png"
-        >
-          <div className="absolute bottom-4 left-0 right-0 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="paragraph-base max-w-[90%] md:max-w-[30%] text-center md:text-start mb-4 md:mb-0 bg-secondary/50">
-              Lorem ipsum dolor, sit amet consectetur adipisicing. amet
-              consectetur adipisicing. Lorem ipsum dolor, sit amet
-            </p>
-            <Button>Book Now</Button>
-          </div>
-        </HeroSection>
-      </div>
-      <div className="px-4 md:px-0">
-        <div className="mt-6">
+      <HeroSection backgroundImageUrl="/images/therapists.png">
+        <div className="absolute bottom-4 left-0 right-0 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="paragraph-base max-w-[90%] md:max-w-[30%] text-center md:text-start mb-4 md:mb-0 bg-secondary/50">
+            Lorem ipsum dolor, sit amet consectetur adipisicing. amet
+            consectetur adipisicing. Lorem ipsum dolor, sit amet
+          </p>
+          <Button>Book Now</Button>
+        </div>
+      </HeroSection>
+        <div className="_container px-4 md:px-0 mt-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {data?.map((item, index) => (
               <Card key={index} data={item} />
@@ -56,7 +51,6 @@ const SectionOne = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
