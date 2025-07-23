@@ -1,17 +1,18 @@
 import { create } from 'zustand';
+import { ReactNode } from 'react';
 
 type BottomBarState = {
   isOpen: boolean;
-  open: () => void;
+  content: ReactNode | null;
+  open: (content: ReactNode) => void;
   close: () => void;
-  toggle: () => void;
 };
 
 const useBottomBarStore = create<BottomBarState>((set) => ({
   isOpen: false,
-  open: () => set({ isOpen: true }),
-  close: () => set({ isOpen: false }),
-  toggle: () => set((state) => ({ isOpen: !state.isOpen })),
+  content: null,
+  open: (content) => set({ isOpen: true, content }),
+  close: () => set({ isOpen: false, content: null }),
 }));
 
 export default useBottomBarStore;

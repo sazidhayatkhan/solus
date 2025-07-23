@@ -5,11 +5,13 @@ import { usePathname } from "next/navigation";
 import { AiOutlineProduct, AiOutlineComment } from "react-icons/ai";
 import { RiHome5Line } from "react-icons/ri";
 import { MdOutlineMedicalServices } from "react-icons/md";
+import useBottomBarStore from "@/store/useBottomDrawerStore";
 
 type Props = {};
 
 const MobileBottomBar = (props: Props) => {
   const pathname = usePathname();
+  const open = useBottomBarStore((state) => state.open);
   const data = [
     {
       icon: <RiHome5Line />,
@@ -53,6 +55,19 @@ const MobileBottomBar = (props: Props) => {
             </Link>
           );
         })}
+        <button
+      onClick={() =>
+        open(
+          <div>
+            <h3 className="text-lg font-bold">About Drawer</h3>
+            <p>This content is from the 📄 About Page.</p>
+          </div>
+        )
+      }
+      className="px-3 py-2 bg-green-600 text-white rounded"
+    >
+      o
+    </button>
       </ul>
     </div>
     </>
