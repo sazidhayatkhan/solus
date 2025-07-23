@@ -66,7 +66,7 @@ const MobileBottomBar = (props: Props) => {
       }
       className="px-3 py-2 bg-green-600 text-white rounded"
     >
-      o
+      test
     </button>
       </ul>
     </div>

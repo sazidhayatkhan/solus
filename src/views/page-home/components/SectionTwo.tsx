@@ -11,12 +11,6 @@ const SectionTwo = (props: Props) => {
     <div className="_container flex flex-col md:flex-row justify-between items-start md:items-center">
       <div className="space-y-6 text-center md:text-start mx-auto md:mx-0">
         <p className="heading-tag">HOW IT WORKS</p>
-        <button
-      onClick={() => open(<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error velit ad vel. Voluptatum vel, magni enim cumque fuga provident eum dolores nemo numquam nesciunt ducimus, dolor optio ipsum tempora.</p>)}
-      className="px-3 py-2 bg-blue-600 text-white rounded"
-    >
-      Open Drawer (Home)
-    </button>
         <h2 className="heading-xl w-[350px]">
           We Help You Prioritize Your Mental Health
         </h2>
