@@ -6,12 +6,16 @@ import { AiOutlineProduct, AiOutlineComment } from "react-icons/ai";
 import { RiHome5Line } from "react-icons/ri";
 import { MdOutlineMedicalServices } from "react-icons/md";
 import useBottomBarStore from "@/store/useBottomDrawerStore";
+import { log } from "node:console";
 
 type Props = {};
 
 const MobileBottomBar = (props: Props) => {
   const pathname = usePathname();
+  const isOpen = useBottomBarStore((state) => state.isOpen);
   const open = useBottomBarStore((state) => state.open);
+  console.log(isOpen);
+  
   const data = [
     {
       icon: <RiHome5Line />,
@@ -28,11 +32,11 @@ const MobileBottomBar = (props: Props) => {
       title: "Services",
       linkUrl: "/services",
     },
-    {
-      icon: <AiOutlineProduct />,
-      title: "Profile",
-      linkUrl: "/dashboard",
-    },
+    // {
+    //   icon: <AiOutlineProduct />,
+    //   title: "Profile",
+    //   linkUrl: "/dashboard",
+    // },
   ];
 
   return (
@@ -64,9 +68,9 @@ const MobileBottomBar = (props: Props) => {
           </div>
         )
       }
-      className="px-3 py-2 bg-green-600 text-white rounded"
+      className={`text-2xl ${ isOpen ? "text-green-300":"text-gray-500"} `}
     >
-      test
+      <AiOutlineProduct />
     </button>
       </ul>
     </div>
