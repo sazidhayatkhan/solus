@@ -10,7 +10,6 @@ type Props = {};
 
 const MobileBottomBar = (props: Props) => {
   const pathname = usePathname();
-
   const data = [
     {
       icon: <RiHome5Line />,
@@ -35,6 +34,7 @@ const MobileBottomBar = (props: Props) => {
   ];
 
   return (
+    <>
     <div className="fixed bottom-0 left-0 w-full bg-primary z-[2] block md:hidden border-t border-gray-300">
       <ul className="flex justify-around items-center">
         {data.map((item, index) => {
@@ -55,6 +55,7 @@ const MobileBottomBar = (props: Props) => {
         })}
       </ul>
     </div>
+    </>
   );
 };
 

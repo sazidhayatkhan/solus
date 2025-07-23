@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import '@/app/globals.css'
+import "@/app/globals.css";
 import Navbar from "@/components/layout/Navbar";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import SessionProvider from "@/lib/SessionProvider";
 import MobileBottomBar from "@/components/layout/MobileBottomBar";
+import BottomPopUpDrawer from "@/components/ui/Drawer/BottomPopUpDrawer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,15 +20,13 @@ export default async function RootLayout({
   const session = await getServerSession(authOptions);
   return (
     <html lang="en">
-      <body
-        className="font-brico"
-      >
+      <body className="font-brico">
         <SessionProvider session={session}>
-          <Navbar/>
-                  {children}
-                  <MobileBottomBar/>
-                </SessionProvider>
-        
+          <Navbar />
+          {children}
+          <MobileBottomBar />
+          <BottomPopUpDrawer />
+        </SessionProvider>
       </body>
     </html>
   );

@@ -2,14 +2,16 @@ import React from "react";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link"
+import useBottomBarStore from "@/store/useBottomDrawerStore";
 type Props = {};
 
 const SectionTwo = (props: Props) => {
+  const toggle = useBottomBarStore((state) => state.toggle);
   return (
     <div className="_container flex flex-col md:flex-row justify-between items-start md:items-center">
       <div className="space-y-6 text-center md:text-start mx-auto md:mx-0">
         <p className="heading-tag">HOW IT WORKS</p>
-
+<button onClick={toggle} className="bg-red-500">test</button>
         <h2 className="heading-xl w-[350px]">
           We Help You Prioritize Your Mental Health
         </h2>
