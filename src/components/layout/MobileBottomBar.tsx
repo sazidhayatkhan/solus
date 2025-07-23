@@ -1,14 +1,16 @@
+"use client";
 import React from "react";
 import Link from "next/link";
-import { FaHome } from "react-icons/fa";
-import { AiOutlineAlignRight } from "react-icons/ai";
-import { AiOutlineProduct } from "react-icons/ai";
-import { AiOutlineComment } from "react-icons/ai";
+import { usePathname } from "next/navigation";
+import { AiOutlineProduct, AiOutlineComment } from "react-icons/ai";
 import { RiHome5Line } from "react-icons/ri";
 import { MdOutlineMedicalServices } from "react-icons/md";
+
 type Props = {};
 
 const MobileBottomBar = (props: Props) => {
+  const pathname = usePathname();
+
   const data = [
     {
       icon: <RiHome5Line />,
@@ -23,7 +25,7 @@ const MobileBottomBar = (props: Props) => {
     {
       icon: <AiOutlineComment />,
       title: "Services",
-      linkUrl: "/",
+      linkUrl: "/services",
     },
     {
       icon: <AiOutlineProduct />,
@@ -35,16 +37,22 @@ const MobileBottomBar = (props: Props) => {
   return (
     <div className="fixed bottom-0 left-0 w-full bg-primary z-[2] block md:hidden border-t border-gray-300">
       <ul className="flex justify-around items-center">
-        {data.map((item, index) => (
-          <Link href={item?.linkUrl || ""}>
-            <li
-              key={index}
-              className="flex flex-col items-center justify-center w-15 h-15 text-white"
-            >
-              <span className="text-2xl">{item.icon}</span>
-            </li>
-          </Link>
-        ))}
+        {data.map((item, index) => {
+          const isActive =
+            item.linkUrl === "/" ? pathname === "/" : pathname.startsWith(item.linkUrl);
+
+          return (
+            <Link key={index} href={item.linkUrl}>
+              <li
+                className={`flex flex-col items-center justify-center w-15 h-15 text-sm ${
+                  isActive ? "text-green-300" : "text-gray-500"
+                }`}
+              >
+                <span className="text-2xl">{item.icon}</span>
+              </li>
+            </Link>
+          );
+        })}
       </ul>
     </div>
   );
