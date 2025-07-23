@@ -4,27 +4,29 @@ import { FaHome } from "react-icons/fa";
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { AiOutlineProduct } from "react-icons/ai";
 import { AiOutlineComment } from "react-icons/ai";
+import { RiHome5Line } from "react-icons/ri";
+import { MdOutlineMedicalServices } from "react-icons/md";
 type Props = {};
 
 const MobileBottomBar = (props: Props) => {
   const data = [
     {
-      icon: <FaHome />,
+      icon: <RiHome5Line />,
       title: "Home",
       linkUrl: "/",
     },
     {
-      icon: <AiOutlineProduct />,
-      title: "Services",
-      linkUrl: "/",
-    },
-    {
-      icon: <AiOutlineComment />,
+      icon: <MdOutlineMedicalServices />,
       title: "Records",
       linkUrl: "/therapists",
     },
     {
-      icon: <AiOutlineAlignRight />,
+      icon: <AiOutlineComment />,
+      title: "Services",
+      linkUrl: "/",
+    },
+    {
+      icon: <AiOutlineProduct />,
       title: "Profile",
       linkUrl: "/dashboard",
     },
