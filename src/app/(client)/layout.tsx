@@ -19,15 +19,15 @@ export default async function RootLayout({
 }>) {
   const session = await getServerSession(authOptions);
   return (
-    <html lang="en">
-      <body className="font-brico">
-        <SessionProvider session={session}>
-          <Navbar />
-          {children}
-          <MobileBottomBar />
-          <BottomPopUpDrawer />
-        </SessionProvider>
-      </body>
-    </html>
+      <html lang="en">
+        <body className="font-brico">
+          <SessionProvider session={session}>
+            <Navbar />
+            {children}
+            <MobileBottomBar />
+            <BottomPopUpDrawer />
+          </SessionProvider>
+        </body>
+      </html>
   );
 }
